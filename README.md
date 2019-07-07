@@ -1,2 +1,1 @@
-# Under Construction...
-
+Welcome to Minxue Pan's Homepage!
