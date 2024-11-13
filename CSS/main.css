@@ -2,14 +2,14 @@ html {
 	background-color: rgb(248, 248, 248);
 }
 > body {
-> 	margin: 30px auto; padding: 10px 50px 30px; text-align: left; color: rgb(0, 0, 0); font-family: helvetica, ariel, "sans serif"; max-width: 960px; background-color: rgb(255, 255, 255);
+> 	margin: 30px auto; padding: 10px 50px 30px; text-align: left; color: rgb(0, 0, 0); font-family: helvetica, ariel, SimSun, "sans serif"; max-width: 960px; background-color: rgb(255, 255, 255);
 > }
 
 body {
  	margin: 10px auto; 
  padding: 2px; 50px; 30px; 
  text-align: left; color: rgb(0, 0, 0); 
- font-family: helvetica, ariel, "sans serif"; 
+ font-family: helvetica, ariel, SimSun, "sans serif"; 
  max-width: 960px; background-color: rgb(255, 255, 255);
  }
 
@@ -35,17 +35,17 @@ img {
 	border: 0px currentColor; border-image: none;
 }
 h1 {
-	font-family: helvetica, ariel, "sans serif";
+	font-family: helvetica, ariel, SimSun, "sans serif";
 }
 h2 {
-	font-family: helvetica, ariel, "sans serif";
+	font-family: helvetica, ariel, SimSun, "sans serif";
 }
 h3 {
-	font-family: helvetica, ariel, "sans serif";
+	font-family: helvetica, ariel, SimSun, "sans serif";
 }
-.head3{font-family: helvetica, ariel, "sans serif";}
+.head3{font-family: helvetica, ariel, SimSun, "sans serif";}
 h4 {
-	font-family: helvetica, ariel, "sans serif";
+	font-family: helvetica, ariel, SimSun, "sans serif";
 }
 p {
 	
