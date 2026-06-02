@@ -1,343 +1,824 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="keywords" content="Minxue Pan">
-<meta name="description" content="Minxue Pan's Homepage">
-<!--<link href="CSS/bootstrap.min.css" media="all" rel="stylesheet">-->
-<link href="CSS/main.css" media="all" rel="stylesheet">
-<title>Welcome to Minxue Pan's Homepage!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Minxue Pan, Nanjing University, software engineering, software testing, verification">
+<meta name="description" content="Minxue Pan — Professor at the Software Institute, Nanjing University. Research in software modelling and verification, analysis and testing, cyber-physical systems, and intelligent software engineering.">
+<title>Minxue Pan — Nanjing University</title>
+<meta name="author" content="Minxue Pan">
+<meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Minxue Pan — Nanjing University">
+<meta property="og:description" content="Professor at the Software Institute, Nanjing University. Research in dependable and intelligent software systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="css/main.css" media="all" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#about">Minxue <span>Pan</span></a>
+    <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
+    </div>
+  </div>
+</nav>
 
+<div class="wrap">
 
-<section id ="headinformation" class="sectionwhite">
-<table id="tbInformation" width="100%">
-    <tr>
-         <td width="480">
-         <!-- <p><font size="6"> Minxue Pan <img src="images/name.png" border="0" height="24"></p> -->
-	 <p><font size="6"> Minxue Pan (潘敏学)</p>
-         </td>
-         <td rowspan="2" align="right">
-	      <img src="images/portrait.JPG" border="0" height="200">
-         </td>
-    </tr>
-    <tr>
-          <td>
-               <p><font size="4"> 
-		        教授、博导 <br>
-		       Professor <br>
-			   Software Institute <br>
-               State Key Laboratory for Novel Software Technology <br>
-               Nanjing University, China <br>
-               <img src="images/email.png" border="0" height="20"> mxp<img src="images/at.png" border="0" height="13">nju.edu.cn <br>
-		   	   </font></p>
-               </td>
-    </tr>
-</table>
-<br><br>
-</SECTION>
+  <!-- ===================== HERO / ABOUT ===================== -->
+  <header class="hero reveal" id="about">
+    <div>
+      <h1 class="hero__name">Minxue Pan<span class="zh">潘敏学</span></h1>
+      <p class="hero__role">Professor · Ph.D. Supervisor &nbsp;|&nbsp; 教授 · 博导</p>
+      <p class="hero__affil">
+        Software Institute<br>
+        <strong>State Key Laboratory for Novel Software Technology</strong><br>
+        Nanjing University, China
+      </p>
+      <div class="hero__contact">
+        <a class="chip" href="mailto:mxp@nju.edu.cn" aria-label="Email: mxp@nju.edu.cn"><span aria-hidden="true">✉</span> mxp@nju.edu.cn</a>
+        <a class="chip" href="https://scholar.google.com/citations?user=8DFPfS4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="chip" href="https://dblp.org/pid/42/7085" target="_blank" rel="noopener">DBLP</a>
+      </div>
+    </div>
+    <img class="hero__photo" src="images/portrait.jpg" alt="Portrait of Minxue Pan"
+         width="188" height="250" loading="eager" decoding="async">
+  </header>
 
+  <section class="bio reveal" style="animation-delay:.08s">
+    <p class="bio__quote">Rigor keeps intelligence sound; intelligence lets rigor scale.</p>
+    <p class="bio__lede">
+      My research centers on the <strong>dependable and intelligent construction of complex
+      software systems</strong>. Large language models have made software easier to write but no
+      easier to trust. My work bridges that gap from two directions: program verification and
+      static analysis act as a <em>harness</em> on what models generate, while intelligent software engineering turns the models
+      themselves into first-class tools for testing, analysis, and repair.
+    </p>
+    <p class="bio__edu">
+      I earned my Ph.D. in
+      <a href="http://cs.nju.edu.cn/" target="_blank" rel="noopener">Computer Science and Technology</a>
+      from <a href="https://www.nju.edu.cn/" target="_blank" rel="noopener">Nanjing University</a>
+      in 2014, advised by <a href="http://cs.nju.edu.cn/lixuandong" target="_blank" rel="noopener">Prof. Xuandong Li</a>,
+      following a B.Sc. from the same university. From 2009 to 2010, I was a visiting student in the
+      <a href="https://eecs.berkeley.edu/" target="_blank" rel="noopener">Department of Electrical
+      Engineering and Computer Sciences</a> at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener">UC
+      Berkeley</a>, hosted by <a href="https://ptolemy.berkeley.edu/~eal/" target="_blank" rel="noopener">Prof. Edward A. Lee</a>.
+    </p>
+  </section>
 
+  <!-- ===================== NEWS ===================== -->
+  <section class="section" id="news">
+    <h2 class="section__title">Latest News</h2>
 
-<SECTION id ="Biography" class="sectionwhite">
-<!--<h3> Biography </h3>-->
-<font size ="normal">
-Focusing on the dependability of complex software systems, my research interests include  software modelling and verification, software analysis and testing, cyber-physical systems, mobile computing, and intelligent software engineering. I obtained my Ph.D. degree in <a href="http://cs.nju.edu.cn/" target="_blank">Computer Science and Technology</a> from <a href="https://www.nju.edu.cn/" target="_blank">Nanjing University</a> in 2014 (supervisor <a href="http://cs.nju.edu.cn/lixuandong" target="_blank">Prof. Xuandong Li</a>). Before that, I obtained my B.Sc. degree, also from Nanjing University. Between 2009 and 2010, I studied in the <a href="https://eecs.berkeley.edu/" target="_blank">Department of Electrical Engineering and Computer Sciences</a> at <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> (supervisor <a href="https://ptolemy.berkeley.edu/~eal/" target="_blank">Prof. Edward A. Lee</a>).</font>
-<!--<A  href="cv.pdf" target="_blank">CV</A>-->
-<br><br>
-</SECTION>
-<!--<div><hr></div>-->
-<!--style="background-color:rgb(247,247,247)"-->
+    <div class="news--callout">
+      <strong>Prospective students:</strong> I am looking for motivated graduate students — both master's
+      and Ph.D. applicants are welcome. If you are interested in building dependable and intelligent
+      software systems, please email me your CV.
+    </div>
 
-<SECTION id ="whatisnew"  class="sectionwhite">
-<h3>Latest News</h3>
-<font size ="normal">
+    <ul class="news">
+      <li>Two papers accepted by <strong>FSE 2026</strong> <span class="tag-a">CCF-A</span></li>
+      <li>Two papers accepted by <strong>ICSE 2026</strong> <span class="tag-a">CCF-A</span></li>
+      <li>One paper accepted by <strong>TOSEM 2026</strong> <span class="tag-a">CCF-A</span></li>
+      <li>One paper accepted by <strong>TDSC 2026</strong> <span class="tag-a">CCF-A</span></li>
+    </ul>
+  </section>
 
-<table cellpadding=3 cellspacing=0 width="100%" class="sectionwhite" >
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="section" id="publications">
+    <h2 class="section__title">
+      Selected Publications
+      <small>More on <a href="https://scholar.google.com/citations?user=8DFPfS4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://dblp.org/pid/42/7085" target="_blank" rel="noopener">DBLP</a></small>
+    </h2>
 
-<TR> <td>
-<ul>
-  <li><p> I am looking for motivated graduate students. Both master and Ph.D. students are welcome. Please send me emails with your CV if you are interested in making dependable and intelligent software systems.</p></li>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>Three papers accepted by ASE 2025 (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>One paper accepted by RTSS 2025 (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>One paper accepted by OOPSLA 2025 (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>One paper accepted by TOSEM (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>Two papers accepted by FSE 2025 (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>One paper accepted by ISSTA 2025 (CCF-A).</strong>	  
-  <li><p><img src="images/news.png" border="0" height="24"><strong>One paper accepted by TCAD (CCF-A).</strong>
-  <li><p><img src="images/news.png" border="0" height="24"><strong>Three papers accepted by ICSE 2025 (CCF-A).</strong>
-  </ul>
-</td>
-</TR>
-</table>
-<br>
-</font>
-</SECTION>
+    <div class="pub-toolbar">
+      <button class="pub-filter is-active" data-filter="all">All</button>
+      <button class="pub-filter" data-filter="2026">2026</button>
+      <button class="pub-filter" data-filter="2025">2025</button>
+      <button class="pub-filter" data-filter="2024">2024</button>
+      <button class="pub-filter" data-filter="2023">2023</button>
+      <button class="pub-filter" data-filter="2022">2022</button>
+      <button class="pub-filter" data-filter="older">2021 &amp; earlier</button>
+    </div>
 
-</SECTION>
-<!--<div><hr></div>-->
-<!--style="background-color:rgb(247,247,247)"-->
+    <ol class="pub-list">
 
+      <!-- ===== 2026 ===== -->
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/fse-2026" target="_blank" rel="noopener">FSE 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">TUSR: A Test Unit–Based Framework for Repairing Obsolete GUI Test Scripts</span>
+          <span class="pub__authors">Shaoheng Cao, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> ACM International Conference on the Foundations of Software Engineering (FSE 2026), forthcoming.</span>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/fse-2026" target="_blank" rel="noopener">FSE 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Automating Dockerfile Refactoring to Multi-Stage Builds</span>
+          <span class="pub__authors">Dongjin Chen, Wenhua Yang, <u>Minxue Pan</u>, Yu Zhou.</span>
+          <span class="pub__meta"> ACM International Conference on the Foundations of Software Engineering (FSE 2026), forthcoming.</span>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2026" target="_blank" rel="noopener">ICSE 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Filtering before Tuning: Robust Fine-Tuning of Large Code Models under Noisy Labels</span>
+          <span class="pub__authors">Zhong Li, Yang Chen, Heng Yong, Yuanyi Lin, Jiali Zhao, Tongtong Xu, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> International Conference on Software Engineering (ICSE 2026), forthcoming.</span>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2026" target="_blank" rel="noopener">ICSE 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Learning without Forgetting: Towards Continual Learning of Fault Localization Models in Industrial Software Systems</span>
+          <span class="pub__authors">Chun Li, Hui Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> International Conference on Software Engineering (ICSE 2026), forthcoming.</span>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://link.springer.com/journal/10703" target="_blank" rel="noopener">FMSD 2026</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Verifying hybrid automata networks guided by task scenarios</span>
+          <span class="pub__authors">Longlong Lu, Yufei Shi, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> Formal Methods in System Design, 68, Article 5, 2026. </span>
+          <a class="pub__link" href="https://doi.org/10.1007/s10703-026-00492-x" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://www.computer.org/csdl/journal/tq" target="_blank" rel="noopener">TDSC 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Trap: Mitigating Poisoning-Based Backdoor Attacks by Treating Poison With Poison</span>
+          <span class="pub__authors">Chun Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE Transactions on Dependable and Secure Computing, vol. 23, no. 2, pp. 4269–4283, 2026. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/TDSC.2025.3644371" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2026">
+        <div class="pub__venue"><a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener">TOSEM 2026</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">A Study of Floating-Point Precision Tuning in Deep Learning Operators Implementations</span>
+          <span class="pub__authors">Zhongzhen Wen, Hongyu Liu, Tingwei Zhu, <u>Minxue Pan</u>, Shaohua Wang, Yuanyi Lin, Kairui Liu, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> ACM Transactions on Software Engineering and Methodology, just accepted. </span>
+          <a class="pub__link" href="https://doi.org/10.1145/3773992" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-<SECTION id="Publications" class="sectionwhilte" >
-<tr>
-	<td><h3>Recent Selected Publications (More in <a href="https://scholar.google.com/citations?user=8DFPfS4AAAAJ&hl=en" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/42/7085" target="_blank">DBLP</a>)</h3></td>
-</tr>
-<table cellpadding=3 cellspacing=0 width="100%" class="sectionwhite" >
-<tr><td>
-<ul>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2025" target="_blank">ASE 2025</a>]</strong> Yuanhong Lan, Shaoheng Cao, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li. <strong>NATE: A Network-Aware Testing Enhancer for Network-Related Fault Detection in Android Apps.</strong> In <i>IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</i>, Seoul, South Korea, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2025" target="_blank">ASE 2025</a>]</strong> Yalin Feng, Yifei Lu, <u>Minxue Pan</u>. <strong>PoliCond: Condition-Aware Ontology-Driven LLMs for Privacy Policy Analysis.</strong> In <i>IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</i>, Seoul, South Korea, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2025" target="_blank">ASE 2025</a>]</strong> Jiajun Li, Wenhua Yang, <u>Minxue Pan</u>, Yu Zhou. <strong>Understanding Feature Request Practice on GitHub via a Large-Scale Empirical Study.</strong> In <i>IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</i>, Seoul, South Korea, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://2025.rtss.org/" target="_blank">RTSS 2025</a>]</strong> Yufei Shi, Longlong Lu, <u>Minxue Pan</u>, Xuandong Li. <strong>Accelerating Timing Specification Verification of Interrupt-driven Real-time Systems.</strong> In <i>IEEE Real-Time Systems Symposium (RTSS 2025)</i>, Boston, MA, USA, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://2025.splashcon.org/track/OOPSLA" target="_blank">OOPSLA 2025</a>]</strong> Chaoyue Zhang, Longlong Lu, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li. <strong>Towards a Theoretically-Backed and Practical Framework for Selective Object-Sensitive Pointer Analysis.</strong> In <i>ACM SIGPLAN International Conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH), OOPSLA</i>, Singapore, 2025, forthcoming.</p>
-  </li>
-  <li>
-   <p><strong>[<a href="https://dl.acm.org/journal/tosem" target="_blank">TOSEM 2025</a>]</strong> Yifei Lu, <u>Minxue Pan</u>, Haochuan Lu, Yuetang Deng, Tian Zhang, Linzhang Wang, and Xuandong Li. <strong>Improving Test Efficacy for Large-Scale Android Applications by Exploiting GUI and Functional Equivalence</strong>. ACM Transactions on Software Engineering and Methodology.  [<a href="https://dl.acm.org/doi/10.1145/3729225?cid=81438592397" target="_blank">link</a>]</p> 
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/fse-2025" target="_blank">FSE 2025</a>]</strong> Chun Li, Hui Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.  <strong>Improving Graph Learning-Based Fault Localization with Tailored Semi-Supervised Learning.</strong> In <i>ACM International Conference on the Foundations of Software Engineering (FSE 2025)</i>, Trondheim, Norway, 2025, forthcoming.</p>
-  </li>
-   <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/fse-2025" target="_blank">FSE 2025</a>]</strong> Shaoheng Cao, Renyi Chen, Wenhua Yang, <u>Minxue Pan</u>, Xuandong Li.  <strong>A Mixed-Methods Study of Model-Based GUI Testing in Real-World Industrial Settings.</strong> In <i>ACM International Conference on the Foundations of Software Engineering (FSE 2025)</i>, Trondheim, Norway, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/issta-2025" target="_blank">ISSTA 2025</a>]</strong> Shaoheng Cao, <u>Minxue Pan</u>, Yuanhong Lan, Xuandong Li.  <strong>Intention-based GUI Test Migration for Mobile Apps using Large Language Models.</strong> In <i>ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2025)</i>, Trondheim, Norway, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://ieee-ceda.org/publications/tcad" target="_blank">TCAD 2025</a>]</strong> Longlong Lu, <u>Minxue Pan</u>, Yifei Lu, Xuandong Li. <strong>Hierarchical Model Checking of SystemVerilog-Specified Asynchronous Circuits for Deadlock Detection</strong>. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Early Access. [<a href="https://ieeexplore.ieee.org/document/10771970" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2025" target="_blank">ICSE 2025</a>]</strong> Heng Yong, Zhong Li, <u>Minxue Pan</u>, Tian Zhang, Jianhua Zhao, Xuandong Li.  <strong>GVI: Guided Vulnerability Imagination for Boosting Deep Vulnerability Detectors.</strong> In <i>Proceedings of the 47th International Conference on Software Engineering</i>, Ottawa, ON, Canada, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2025" target="_blank">ICSE 2025 (Best Artifact Award)</a>]</strong> Menglong Chen, Tian Tan, <u>Minxue Pan</u>, Yue Li.  <strong>PacDroid: A Pointer-Analysis-Centric Framework for Security Vulnerabilities in Android Apps.</strong> In <i>Proceedings of the 47th International Conference on Software Engineering</i>, Ottawa, ON, Canada, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2025" target="_blank">ICSE 2025</a>]</strong> Chun Li, Hui Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.  <strong>Enhancing Fault Localization in Industrial Software Systems via Contrastive Learning.</strong> In <i>Proceedings of the 47th International Conference on Software Engineering</i>, Ottawa, ON, Canada, 2025, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2024" target="_blank">ASE 2024</a>]</strong> Xinran Yu, Chun Li, <u>Minxue Pan</u>, Xuandong Li. <strong>DroidCoder: Enhanced Android Code Completion with Context-Enriched Retrieval-Augmented Generation</strong>. In <i>Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering</i>, Sacramento, California, United States, pp. 681–693.[<a href="https://dl.acm.org/doi/10.1145/3691620.3695063?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2024" target="_blank">ASE 2024</a>]</strong> Shaoheng Cao, Renyi Chen, <u>Minxue Pan</u>, Wenhua Yang, Xuandong Li. <strong>Beyond Manual Modeling: Automating GUI Model Generation Using Design Documents</strong>. In <i>Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering</i>, Sacramento, California, United States, pp. 91–103.[<a href="https://dl.acm.org/doi/10.1145/3691620.3695032?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2024" target="_blank">ASE 2024</a>]</strong> Jian Shen, Zhong Li, <u>Minxue Pan</u>, Xuandong Li. <strong>Prioritizing Test Inputs for DNNs Using Training Dynamics</strong>. In <i>Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering</i>, Sacramento, California, United States, pp. 1219–1231.[<a href="https://dl.acm.org/doi/10.1145/3691620.3695498?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2024" target="_blank">ASE 2024</a>]</strong> Zhong Li, Chong Zhang, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li. <strong>AACEGEN: Attention Guided Adversarial Code Example Generation for Deep Code Models</strong>. In <i>Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering</i>, Sacramento, California, United States, pp. 1245–1257.[<a href="https://dl.acm.org/doi/10.1145/3691620.3695500?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2024" target="_blank">ASE 2024</a>]</strong> Yuanhong Lan, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li. <strong>Navigating Mobile Testing Evaluation: A Comprehensive Statistical Analysis of Android GUI Testing Metrics</strong>. In <i>Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering</i>, Sacramento, California, United States, pp. 944–956.[<a href="https://dl.acm.org/doi/10.1145/3691620.3695476?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/issta-2024" target="_blank">ISSTA 2024</a>]</strong> Zhong Li, Zhengfeng Xu, Ruihua Ji, <u>Minxue Pan</u>, Tian Zhang, Linzhang Wang, Xuandong Li. <strong>Distance-Aware Test Input Selection for Deep Neural Networks.</strong> In <i>Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, Vienna, Austria, pp. 248–260.[<a href="https://dl.acm.org/doi/10.1145/3650212.3652125?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/issta-2024" target="_blank">ISSTA 2024</a>]</strong> Zhongzhen Wen, Jiayuan Zhou, <u>Minxue Pan</u>, Shaohua Wang, Xing Hu, Tongtong Xu, Tian Zhang, Xuandong Li. <strong>Silent Taint-Style Vulnerability Fixes Identification.</strong> In <i>Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, Vienna, Austria, pp. 428–439.[<a href="https://dl.acm.org/doi/10.1145/3650212.3652139?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/issta-2024" target="_blank">ISSTA 2024</a>]</strong> Linna Xie, Chongmin Li, Yu Pei, Tian Zhang, <u>Minxue Pan</u>. <strong>BRAFAR: Bidirectional Refactoring, Alignment, Fault Localization, and Repair for Programming Assignments.</strong> In <i>Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, Vienna, Austria, pp. 856–868.[<a href="https://dl.acm.org/doi/10.1145/3650212.3680326?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/details/icsme-2024/" target="_blank">ICSME 2024</a>]</strong> Tingwei Zhu, Zhong Li, Tian Zhang, <u>Minxue Pan</u>, Xuandong Li. <strong>Precos: Project-specific Retrieval for Better Code Summarization.</strong> In <i>Proceedings of the 40th International Conference on Software Maintenance and Evolution</i>, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/details/icsme-2024/" target="_blank">ICSME 2024</a>]</strong> Zhongzhen Wen, Yifei Lu, Tongtong Xu, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li. <strong>Enhancing Web Test Script Repair using Integrated UI Structural and Visual Information.</strong> In <i>Proceedings of the 40th International Conference on Software Maintenance and Evolution</i>, forthcoming.</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://2024.splashcon.org/track/splash-2024-oopsla" target="_blank">OOPSLA 2024</a>]</strong> Yifei Lu, Weidong Hou, <u>Minxue Pan</u>, Xuandong Li, Zhendong Su. <strong>Understanding and Finding Java Decompiler Bugs.</strong> In <i>Proceedings of the ACM on Programming Languages</i>, 8, OOPSLA, Article 143 (April 2024), 27 pages. [<a href="https://dl.acm.org/doi/10.1145/3649860?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-        <p><strong>[<a href="https://link.springer.com/journal/10515" target="_blank">ASEJ 2024</a>]</strong> Jian Shen, Zhong Li, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li. <strong>Mitigating the impact of mislabeled data on deep predictive models: an empirical study of learning with noise approaches in software engineering tasks</strong>. Automated Software Engineering 31, 33 (2024).  [<a href="https://link.springer.com/article/10.1007/s10515-024-00435-y" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://onlinelibrary.wiley.com/journal/20477481" target="_blank">JSEP 2024</a>]</strong> Chaochao Shen,  Wenhua Yang,  Haitao Jia,  <u>Minxue Pan</u>,  Yu Zhou. <strong>Richen: Automated enrichment of Git documentation with usage examples and scenarios</strong>. JJournal of Software: Evolution and Process 2024;e2662.  [<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smr.2662" target="_blank">link</a>]</p>
-  </li>	
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2024" target="_blank">ICSE 2024</a>]</strong> Shaoheng Cao, <u>Minxue Pan</u>, Yu Pei, Wenhua Yang, Tian Zhang, Linzhang Wang, Xuandong Li. <strong>Comprehensive Semantic Repair of Obsolete GUI Test Scripts for Mobile Applications.</strong> In <i>Proceedings of the 46th International Conference on Software Engineering</i>, Article 90, 1–13. [<a href="https://dl.acm.org/doi/10.1145/3597503.3639108?cid=81438592397" target="_blank">link</a>]</p>
-  </li>	
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2024" target="_blank">ICSE 2024</a>]</strong> Yuanhong Lan, Yifei Lu, Zhong Li, <u>Minxue Pan</u>, Wenhua Yang, Tian Zhang, Xuandong Li. <strong>Deeply Reinforcing Android GUI Testing with Deep Reinforcement Learning.</strong> In <i>Proceedings of the 46th International Conference on Software Engineering</i>, Article 71, 1–13. [<a href="https://dl.acm.org/doi/10.1145/3597503.3623344?cid=81438592397" target="_blank">link</a>]</p>
-  </li>	
-  <li>
-   <p><strong>[<a href="https://dl.acm.org/journal/tosem" target="_blank">TOSEM 2024</a>]</strong> Tingwei Zhu, Zhong Li, <u>Minxue Pan</u>, Chaoxuan Shi, Tian Zhang, Yu Pei, and Xuandong Li. <strong>Deep is Better? An Empirical Comparison of Information Retrieval and Deep Learning Approaches to Code Summarization</strong>. ACM Transactions on Software Engineering and Methodology, 33, 3, Article 67 (March 2024), 37 pages.  [<a href="https://dl.acm.org/doi/10.1145/3631975?cid=81438592397" target="_blank">link</a>]</p> 
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2023" target="_blank">ASE 2023</a>]</strong> Ruihua Ji, Tingwei Zhu, Xiaoqing Zhu, Chunyang Chen, <u>Minxue Pan</u>, Tian Zhang. <strong>Vision-based Widget Mapping for Test Migration across Mobile Platforms: Are We There Yet?</strong> In <i>Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering</i>, Luxembourg, Luxembourg, 2023, pp. 1416-1428.  [<a href="https://ieeexplore.ieee.org/abstract/document/10298559" target="_blank">link</a>]</p> 
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2023" target="_blank">ASE 2023</a>]</strong> Yingying He, Wenhua Yang, <u>Minxue Pan</u>, Yasir Hussain, and Yu Zhou. <strong>Understanding and Enhancing Issue Prioritization in GitHub</strong>. In <i>Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering</i>, Luxembourg, Luxembourg, 2023, pp. 813-824.  [<a href="https://ieeexplore.ieee.org/document/10298431" target="_blank">link</a>]</p> 
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2023" target="_blank">ASE 2023</a>]</strong> Pengcheng Liu, Yifei Lu, Wenhua Yang, <u>Minxue Pan</u>. <strong>VALAR: Streamlining Alarm Ranking in Static Analysis with Value-Flow Assisted Active Learning</strong>. In <i>Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering</i>, Luxembourg, Luxembourg, 2023, pp. 1940-1951. [<a href="https://ieeexplore.ieee.org/document/10298558" target="_blank">link</a>]</p> 
-  </li>
-  <li>
-    <p><strong>[<a href="https://conf.researchr.org/home/fse-2023" target="_blank">ESEC/FSE 2023</a>]</strong> Wenhua Yang, Chong Zhang, and <u>Minxue Pan</u>. <strong>Understanding the Topics and Challenges of GPU Programming by Classifying and Analyzing Stack Overflow Posts</strong>. In <i>Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i>,  pp. 1444–1456. [<a href="https://dl.acm.org/doi/10.1145/3611643.3616365?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-   <p><strong>[<a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank">IST 2023</a>]</strong> Haitao Jia, Wenhua Yang, Chaochao Shen, <u>Minxue Pan</u>, Yu Zhou. <strong>Git command recommendations using crowd-sourced knowledge</strong>. Information and Software Technology, Volume 159, 2023, 107199.  [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950584923000538" target="_blank">link</a>]</p> 
-  </li>
-  <li>
-   <p><strong>[<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24" target="_blank">TRel 2023</a>]</strong> Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Yu Zhou, and Zhiqiu Huang. <strong>Ensure: Towards Reliable Control of Cyber-Physical Systems Under Uncertainty</strong>. IEEE Transactions on Reliability, vol. 72, no. 1, pp. 289-301, March 2023.  [<a href="https://ieeexplore.ieee.org/abstract/document/9765334" target="_blank">link</a>]</p> 
-  </li>  
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/ase-2022" target="_blank">ASE 2022</a>]</strong> Zhong Li, <u>Minxue Pan</u>, Yu Pei, Tian Zhang, Linzhang Wang, Xuandong Li. <strong>Robust Learning of Deep Predictive Models from Noisy and Imbalanced Software Engineering Datasets</strong>. In <i>Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering</i>, Article 86, 1–13, 2022. [<a href="https://dl.acm.org/doi/abs/10.1145/3551349.3556941?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/issta-2022" target="_blank">ISSTA 2022</a>]</strong> Yifei Lu, <u>Minxue Pan</u>, Yu Pei, Xuandong Li. <strong>Detecting Resource Utilization Bugs Induced by Variant Lifecycles in Android</strong>. In <i>Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, pp. 642–653, 18-22 July, 2022. [<a href="https://dl.acm.org/doi/abs/10.1145/3533767.3534413?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://www.computer.org/csdl/journals/ts" target="_blank">TSE 2022</a>]</strong> Liushan Chen, Yu Pei, <u>Minxue Pan</u>, Tian Zhang, Qixin Wang, and Carlo A. Furia. <strong>Program Repair with Repeated Learning</strong>. IEEE Transactions on Software Engineering, vol. 49, no. 2, pp. 831-848, 1 Feb. 2023. [<a href="https://ieeexplore.ieee.org/document/9749899" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://dl.acm.org/journal/tosem" target="_blank">TOSEM 2022</a>]</strong> <u>Minxue Pan</u>, Yifei Lu, Yu Pei, Tian Zhang, and Xuandong Li. <strong>Preference-Wise Testing of Android Apps via Test Amplification</strong>. ACM Transactions on Software Engineering and Methodology, 32, 1, Article 4 (January 2023), 37 pages. [<a href="https://dl.acm.org/doi/10.1145/3511804" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://www.sosym.org/" target="_blank">SoSyM 2022</a>]</strong> Longlong Lu, <u>Minxue Pan</u>, Tian Zhang, and Xuandong Li. <strong>Improving timing analysis effectiveness for scenario-based specifications by combining SAT and LP techniques</strong>. Software and Systems Modeling, 21, 1321–1338, 2022. [<a href="https://doi.org/10.1007/s10270-022-00980-8" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://dl.acm.org/journal/tosem" target="_blank">TOSEM 2021</a>]</strong> Wenhua Yang, Chong Zhang, <u>Minxue Pan</u>, Chang Xu, Yu Zhou, and Zhiqiu Huang. <strong>Do Developers Really Know How to Use Git Commands? A Large-Scale Study Using Stack Overflow</strong>. ACM Transactions on Software Engineering and Methodology, 31, 3, Article 44 (July 2022), 29 pages. [<a href="https://dl.acm.org/doi/10.1145/3494518?cid=81438592397
-" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://conf.researchr.org/home/issta-2021" target="_blank">ISSTA 2021</a>]</strong> Tongtong Xu, <u>Minxue Pan</u>, Yu Pei, Guiyin Li, Xia Zeng, Tian Zhang, Yuetang Deng, and Xuandong Li.  <strong>GUIDER: GUI Structure and Vision Co-Guided Test Script Repair for Android Apps</strong>. In <i>Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, pp. 191-203. July 11–17, 2021, Virtual, Denmark. [<a href="https://dl.acm.org/doi/10.1145/3460319.3464830?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://icml.cc/Conferences/2021" target="_blank">ICML 2021</a>]</strong> Zhong Li, <u>Minxue Pan</u>, Tian Zhang, and Xuandong Li.  <strong>Testing DNN-based Autonomous Driving Systems under Critical Environmental Conditions</strong>. In <i>Proceedings of the 38th International Conference on Machine Learning</i>, PMLR 139: 6471-6482, 2021.  [<a href="http://proceedings.mlr.press/v139/li21r.html" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://onlinelibrary.wiley.com/journal/10991689" target="_blank">STVR 2021</a>]</strong> Renhe Jiang, Zhengzhao Chen, Yu Pei, <u>Minxue Pan</u>, Tian Zhang, and Xuandong Li. <strong>Documentation-based Functional Constraint Generation for Library Methods</strong>. Software: Testing, Verification and Reliability. 2021;e1785. [<a href="https://doi.org/10.1002/stvr.1785" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank">IST 2020</a>]</strong> Wenhua Yang, <u>Minxue Pan</u>, Yu Zhou, Zhiqiu Huang. <strong>Developer portraying: A quick approach to understanding developers on OSS platforms</strong>. Information and Software Technology, Volume 125, 2020, 106336. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950584920301038" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://www.computer.org/csdl/journals/ts" target="_blank">TSE 2020</a>]</strong> <u>Minxue Pan</u>, Tongtong Xu, Yu Pei, Zhong Li, Tian Zhang, and Xuandong Li. <strong>GUI-Guided Test Script Repair for Mobile Apps</strong>. IEEE Transactions on Software Engineering, vol. 48, no. 3, pp. 910-929. [<a href="https://doi.org/10.1109/TSE.2020.3007664" target="_blank">link</a>] </p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://2020.esec-fse.org" target="_blank">ESEC/FSE 2020</a>]</strong> Juan Zhai, Yu Shi, <u>Minxue Pan</u>, Guian Zhou, Yongxiang Liu, Chunrong Fang, Shiqing Ma, Lin Tan, and Xiangyu Zhang. <strong>C2S: Translating Natural Language Comments to Formal Program Specifications</strong>. In <i>Proceedings of the 28th ACM Joint Meeting of the European Software Engineering Conference and ACM SIGSOFT Symposium on the Foundations of Software Engineering</i>, pp. 25-37. November 8–13, 2020, Virtual Event, USA. [<a href="https://dl.acm.org/doi/10.1145/3368089.3409716?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://conf.researchr.org/home/issta-2020" target="_blank">ISSTA 2020 (Distinguished Paper Award)</a>]</strong> <u>Minxue Pan</u>, An Huang, Guoxin Wang, Tian Zhang, and Xuandong Li. <strong>Reinforcement Learning Based Curiosity-driven Testing of Android Applications</strong>. In <i>Proceedings of the 29th ACM SIGSOFT International Symposium on Software Testing and Analysis</i>, pp. 153-164. July 18–22, 2020, Virtual Event, USA. [<a href="https://dl.acm.org/doi/10.1145/3395363.3397354?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://www.computer.org/csdl/journals/ts" target="_blank">TSE 2020</a>]</strong> Tongtong Xu, Liushan Chen, Yu Pei, Tian Zhang, <u>Minxue Pan</u>, and Carlo A. Furia. <strong>RESTORE: Retrospective Fault Localization Enhancing Automated Program Repair</strong>. IEEE Transactions on Software Engineering, vol. 48, no. 1, pp. 309-326. [<a href="https://doi.org/10.1109/TSE.2020.2987862" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://conf.researchr.org/home/icpc-2020" target="_blank">ICPC 2020</a>]</strong> Zejun Zhang, <u>Minxue Pan</u>, Tian Zhang, Xinyu Zhou, and Xuandong Li. <strong>Deep-Diving into Documentation to Develop Improved Java-to-Swift API Mapping</strong>. In <i>Proceedings of the 28th IEEE/ACM International Conference on Program Comprehension</i>, pp. 106-116. July 13-15, 2020, Virtual Event, Republic of Korea. [<a href="https://dl.acm.org/doi/10.1145/3387904.3389282?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank">JSS 2020</a>]</strong> Zhengzhao Chen, Renhe Jiang, Zejun Zhang, Yu Pei, <u>Minxue Pan</u>, Tian Zhang and Xuandong Li. <strong>Enhancing Example-Based Code Search with Functional Semantics</strong>. Journal of Systems and Software, Volume 165, 2020, Article 110568. [<a href="https://doi.org/10.1016/j.jss.2020.110568" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  	<p><strong>[<a href="https://conf.researchr.org/home/icse-2020" target="_blank">ICSE  2020</a>]</strong> Juan Zhai, Xiangzhe Xu, Yu Shi, Guanhong Tao, <u>Minxue Pan</u>, Shiqing Ma, Lei Xu, Weifeng Zhang, Lin Tan, and Xiangyu Zhang. <strong>CPC: Automatically Classifying and Propagating Natural Language Comments via Program Analysis</strong>. In <i>Proceedings of the 42nd International Conference on Software Engineering</i>, pp. 1359-1371. July 6-11, 2020, Virtual Event, Republic of Korea. [<a href="https://dl.acm.org/doi/10.1145/3377811.3380427?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank">JSS 2020</a>]</strong> <u>Minxue Pan</u>, Yifei Lu, Yu Pei, Tian Zhang, Juan Zhai, and Xuandong Li. <strong>Effective Testing of Android Apps Using Extended IFML Models</strong>. Journal of Systems and Software, Volume 159, 2020, Article 110433. [<a href="https://doi.org/10.1016/j.jss.2019.110433" target="_blank">link</a>]</p>
-  </li>
-  <li>
-    <p><strong>[<a href="https://esec-fse19.ut.ee/" target="_blank">ESEC/FSE 2019</a>]</strong> Yifei Lu, <u>Minxue Pan</u>, Juan Zhai, Tian Zhang, and Xuandong Li. <strong>Preference-Wise Testing for Android Applications</strong>. In <i>Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i>, pp. 268-278. August 26–30, 2019, Tallinn, Estonia. [<a href="https://dl.acm.org/doi/10.1145/3338906.3338980?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://conf.researchr.org/home/icse-2019" target="_blank">ICSE  2019</a>]</strong> <u>Minxue Pan</u>, Shouyu Chen, Yu Pei, Tian Zhang, and Xuandong Li. <strong>Easy modelling and verification of unpredictable and preemptive interrupt-driven systems</strong>. In <i>Proceedings of the 41st International Conference on Software Engineering</i>, pp. 212-222. May 25-31, 2019, Montréal, QC, Canada. [<a href="https://doi.org/10.1109/ICSE.2019.00037" target="_blank">link</a>]</p>
-  </li>
-  <li>
-	<p><strong>[<a href="https://link.springer.com/journal/10270" target="_blank">SoSyM  2019</a>]</strong> Xiao He, Tian Zhang, <u>Minxue Pan</u>, Zhiyi Ma, and Chang-Jun Hu. <strong>Template-based model generation</strong>. Software & Systems Modeling (2019), Volume 18, Issue 3, pp. 2051–2092. [<a href="https://doi.org/10.1007/s10270-017-0634-5" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  <p><strong>[<a href="http://ase2018.com/" target="_blank">ASE 2018</a>]</strong> Zhenhao Tang, Juan Zhai, <u>Minxue Pan</u>, Yousra Aafer, Shiqing Ma, Xiangyu Zhang, and Jianhua Zhao. <strong>Dual-force: understanding WebView malware via cross-language forced execution</strong>. In <i>Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering</i>, pp. 714-725. September 3-7, 2018, Montpellier, France. [<a href="https://dl.acm.org/doi/10.1145/3238147.3238221?cid=81438592397" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  <p><strong>[<a href="http://www.ieee-scam.org/2018/" target="_blank">SCAM 2018</a>]</strong> Renhe Jiang, Zhengzhao Chen, Zejun Zhang, Yu Pei, <u>Minxue Pan</u> and Tian Zhang. <strong>Semantics-Based Code Search Using Input/Output Examples</strong>. In <i>Proceedings of the 18th IEEE International Working Conference on Source Code Analysis and Manipulation</i>, pp. 92-102. September 23-24, 2018, Madrid, Spain. [<a href="https://doi.org/10.1109/SCAM.2018.00018" target="_blank">link</a>]</p>
-  </li> 
-  <li>
-	<p><strong>[<a href="https://toit.acm.org/" target="_blank">TOIT 2018</a>]</strong> Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Xiaoxing Ma, and Jian Lu. <strong>Improving Verification Accuracy of CPS by Modeling and Calibrating Interaction Uncertainty</strong>. ACM Transactions on Internet Technology (2018), Volume 18 Issue 2, Article No. 20. [<a href="https://dl.acm.org/doi/10.1145/3093894?cid=81438592397" target="_blank">link</a>]</p>
-  </li> 
-  <li>
-	<p><strong>[<a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank">JSS 2018</a>]</strong> Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Chun Cao, Xiaoxing Ma, and Jian Lu. <strong>Efficient validation of self-adaptive applications by counterexample probability maximization</strong>. Journal of Systems and Software (2018), Volume 138, pp. 82-99. [<a href="https://doi.org/10.1016/j.jss.2017.12.009" target="_blank">link</a>]</p>
-  </li>
-  <li>
-  <p><strong>[<a href="https://www.es.mdh.se/icst2018/" target="_blank">ICST 2018</a>]</strong> Ruihua Ji, Zhong Li, Shouyu Chen, <u>Minxue Pan</u>, Tian Zhang, Shaukat Ali, Tao Yue and Xuandong Li. <strong>Uncovering Unknown System Behaviors in Uncertain Networks with Model and Search-Based Testing</strong>. In <i>Proceedings of the IEEE 11st International Conference on Software Testing, Verification and Validation</i>, pp. 204–214. April 9-13, 2018, Västerås, Sweden. [<a href="https://doi.org/10.1109/ICST.2018.00029" target="_blank">link</a>]</p>
-  </li> 
-  
-  </ul>
-</td></tr>
-</table>
-<br>
-</SECTION>
+      <!-- ===== 2025 ===== -->
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2025" target="_blank" rel="noopener">ASE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">NATE: A Network-Aware Testing Enhancer for Network-Related Fault Detection in Android Apps</span>
+          <span class="pub__authors">Yuanhong Lan, Shaoheng Cao, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE/ACM International Conference on Automated Software Engineering (ASE 2025), Seoul, South Korea, pp. 1390-1402. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/ASE63991.2025.00118" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2025" target="_blank" rel="noopener">ASE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">PoliCond: Condition-Aware Ontology-Driven LLMs for Privacy Policy Analysis</span>
+          <span class="pub__authors">Yalin Feng, Yifei Lu, <u>Minxue Pan</u>.</span>
+          <span class="pub__meta"> IEEE/ACM International Conference on Automated Software Engineering (ASE 2025), Seoul, South Korea, pp. 2821–2833.</span>
+		  <a class="pub__link" href="https://doi.org/10.1109/ASE63991.2025.00232" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2025" target="_blank" rel="noopener">ASE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Understanding Feature Request Practice on GitHub via a Large-Scale Empirical Study</span>
+          <span class="pub__authors">Jiajun Li, Wenhua Yang, <u>Minxue Pan</u>, Yu Zhou.</span>
+          <span class="pub__meta"> IEEE/ACM International Conference on Automated Software Engineering (ASE 2025), Seoul, South Korea, pp. 2783–2794.</span>
+		  <a class="pub__link" href="https://doi.org/10.1109/ASE63991.2025.00228" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://2025.rtss.org/" target="_blank" rel="noopener">RTSS 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Accelerating Timing Specification Verification of Interrupt-driven Real-time Systems</span>
+          <span class="pub__authors">Yufei Shi, Longlong Lu, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE Real-Time Systems Symposium (RTSS 2025), Boston, MA, USA, pp. 351-367.</span>
+		  <a class="pub__link" href="https://doi.org/10.1109/RTSS66672.2025.00036" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://2025.splashcon.org/track/OOPSLA" target="_blank" rel="noopener">OOPSLA 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Towards a Theoretically-Backed and Practical Framework for Selective Object-Sensitive Pointer Analysis</span>
+          <span class="pub__authors">Chaoyue Zhang, Longlong Lu, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> Proc. ACM on Programming Languages, 9(OOPSLA2), pp. 1698–1725, 2025. </span>
+          <a class="pub__link" href="https://doi.org/10.1145/3763111" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener">TOSEM 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Improving Test Efficacy for Large-Scale Android Applications by Exploiting GUI and Functional Equivalence</span>
+          <span class="pub__authors">Yifei Lu, <u>Minxue Pan</u>, Haochuan Lu, Yuetang Deng, Tian Zhang, Linzhang Wang, Xuandong Li.</span>
+          <span class="pub__meta"> ACM Transactions on Software Engineering and Methodology, 35(1), Article 20, 50 pages. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3729225?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/fse-2025" target="_blank" rel="noopener">FSE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Improving Graph Learning-Based Fault Localization with Tailored Semi-Supervised Learning</span>
+          <span class="pub__authors">Chun Li, Hui Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> Proc. ACM on Software Engineering, 2(FSE), Article FSE069, 23 pages. </span>
+          <a class="pub__link" href="https://doi.org/10.1145/3715788" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/fse-2025" target="_blank" rel="noopener">FSE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">A Mixed-Methods Study of Model-Based GUI Testing in Real-World Industrial Settings</span>
+          <span class="pub__authors">Shaoheng Cao, Renyi Chen, Wenhua Yang, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> Proc. ACM on Software Engineering, 2(FSE), Article FSE070, 22 pages. </span>
+          <a class="pub__link" href="https://doi.org/10.1145/3715789" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2025" target="_blank" rel="noopener">ISSTA 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Intention-based GUI Test Migration for Mobile Apps using Large Language Models</span>
+          <span class="pub__authors">Shaoheng Cao, <u>Minxue Pan</u>, Yuanhong Lan, Xuandong Li.</span>
+          <span class="pub__meta"> Proc. ACM on Software Engineering, 2(ISSTA), Article ISSTA101, 23 pages. </span>
+          <a class="pub__link" href="https://doi.org/10.1145/3728978" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://ieee-ceda.org/publications/tcad" target="_blank" rel="noopener">TCAD 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Hierarchical Model Checking of SystemVerilog-Specified Asynchronous Circuits for Deadlock Detection</span>
+          <span class="pub__authors">Longlong Lu, <u>Minxue Pan</u>, Yifei Lu, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2025. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/TCAD.2024.3509798" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2025" target="_blank" rel="noopener">ICSE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">GVI: Guided Vulnerability Imagination for Boosting Deep Vulnerability Detectors</span>
+          <span class="pub__authors">Heng Yong, Zhong Li, <u>Minxue Pan</u>, Tian Zhang, Jianhua Zhao, Xuandong Li.</span>
+          <span class="pub__meta"> 47th International Conference on Software Engineering, Ottawa, ON, Canada, pp. 2867–2879. </span>
+          <a class="pub__link" href="https://dblp.org/rec/conf/icse/YongLPZZL25.html" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2025" target="_blank" rel="noopener">ICSE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">PacDroid: A Pointer-Analysis-Centric Framework for Security Vulnerabilities in Android Apps <span class="pub__award">Best Artifact Award</span></span>
+          <span class="pub__authors">Menglong Chen, Tian Tan, <u>Minxue Pan</u>, Yue Li.</span>
+          <span class="pub__meta"> 47th International Conference on Software Engineering, Ottawa, ON, Canada, pp. 2803–2815. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/ICSE55347.2025.00208" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2025">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2025" target="_blank" rel="noopener">ICSE 2025</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Enhancing Fault Localization in Industrial Software Systems via Contrastive Learning</span>
+          <span class="pub__authors">Chun Li, Hui Li, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> 47th International Conference on Software Engineering, Ottawa, ON, Canada, pp. 691–703. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/ICSE55347.2025.00009" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-<SECTION id ="teaching"  class="sectionwhite">
-<h3>Teaching</h3>
-<font size ="normal">
+      <!-- ===== 2024 ===== -->
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2024" target="_blank" rel="noopener">ASE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">DroidCoder: Enhanced Android Code Completion with Context-Enriched Retrieval-Augmented Generation</span>
+          <span class="pub__authors">Xinran Yu, Chun Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> 39th IEEE/ACM International Conference on Automated Software Engineering, Sacramento, CA, USA, pp. 681–693. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3691620.3695063?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2024" target="_blank" rel="noopener">ASE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Beyond Manual Modeling: Automating GUI Model Generation Using Design Documents</span>
+          <span class="pub__authors">Shaoheng Cao, Renyi Chen, <u>Minxue Pan</u>, Wenhua Yang, Xuandong Li.</span>
+          <span class="pub__meta"> 39th IEEE/ACM International Conference on Automated Software Engineering, Sacramento, CA, USA, pp. 91–103. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3691620.3695032?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2024" target="_blank" rel="noopener">ASE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Prioritizing Test Inputs for DNNs Using Training Dynamics</span>
+          <span class="pub__authors">Jian Shen, Zhong Li, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> 39th IEEE/ACM International Conference on Automated Software Engineering, Sacramento, CA, USA, pp. 1219–1231. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3691620.3695498?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2024" target="_blank" rel="noopener">ASE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">AACEGEN: Attention Guided Adversarial Code Example Generation for Deep Code Models</span>
+          <span class="pub__authors">Zhong Li, Chong Zhang, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 39th IEEE/ACM International Conference on Automated Software Engineering, Sacramento, CA, USA, pp. 1245–1257. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3691620.3695500?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2024" target="_blank" rel="noopener">ASE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Navigating Mobile Testing Evaluation: A Comprehensive Statistical Analysis of Android GUI Testing Metrics</span>
+          <span class="pub__authors">Yuanhong Lan, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> 39th IEEE/ACM International Conference on Automated Software Engineering, Sacramento, CA, USA, pp. 944–956. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3691620.3695476?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2024" target="_blank" rel="noopener">ISSTA 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Distance-Aware Test Input Selection for Deep Neural Networks</span>
+          <span class="pub__authors">Zhong Li, Zhengfeng Xu, Ruihua Ji, <u>Minxue Pan</u>, Tian Zhang, Linzhang Wang, Xuandong Li.</span>
+          <span class="pub__meta"> 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis, Vienna, Austria, pp. 248–260. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3650212.3652125?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2024" target="_blank" rel="noopener">ISSTA 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Silent Taint-Style Vulnerability Fixes Identification</span>
+          <span class="pub__authors">Zhongzhen Wen, Jiayuan Zhou, <u>Minxue Pan</u>, Shaohua Wang, Xing Hu, Tongtong Xu, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis, Vienna, Austria, pp. 428–439. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3650212.3652139?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2024" target="_blank" rel="noopener">ISSTA 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">BRAFAR: Bidirectional Refactoring, Alignment, Fault Localization, and Repair for Programming Assignments</span>
+          <span class="pub__authors">Linna Xie, Chongmin Li, Yu Pei, Tian Zhang, <u>Minxue Pan</u>.</span>
+          <span class="pub__meta"> 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis, Vienna, Austria, pp. 856–868. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3650212.3680326?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/details/icsme-2024/" target="_blank" rel="noopener">ICSME 2024</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Precos: Project-specific Retrieval for Better Code Summarization</span>
+          <span class="pub__authors">Tingwei Zhu, Zhong Li, Tian Zhang, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> 40th International Conference on Software Maintenance and Evolution, pp. 487–498. </span>
+          <a class="pub__link" href="https://conf.researchr.org/details/icsme-2024/" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/details/icsme-2024/" target="_blank" rel="noopener">ICSME 2024</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Enhancing Web Test Script Repair using Integrated UI Structural and Visual Information</span>
+          <span class="pub__authors">Zhongzhen Wen, Yifei Lu, Tongtong Xu, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 40th International Conference on Software Maintenance and Evolution, pp. 75–86. </span>
+          <a class="pub__link" href="https://conf.researchr.org/details/icsme-2024/" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://2024.splashcon.org/track/splash-2024-oopsla" target="_blank" rel="noopener">OOPSLA 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Understanding and Finding Java Decompiler Bugs</span>
+          <span class="pub__authors">Yifei Lu, Weidong Hou, <u>Minxue Pan</u>, Xuandong Li, Zhendong Su.</span>
+          <span class="pub__meta"> Proceedings of the ACM on Programming Languages, 8, OOPSLA, Article 143, 27 pages. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3649860?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://link.springer.com/journal/10515" target="_blank" rel="noopener">ASEJ 2024</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Mitigating the impact of mislabeled data on deep predictive models: an empirical study of learning with noise approaches in software engineering tasks</span>
+          <span class="pub__authors">Jian Shen, Zhong Li, Yifei Lu, <u>Minxue Pan</u>, Xuandong Li.</span>
+          <span class="pub__meta"> Automated Software Engineering 31, 33 (2024). </span>
+          <a class="pub__link" href="https://link.springer.com/article/10.1007/s10515-024-00435-y" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://onlinelibrary.wiley.com/journal/20477481" target="_blank" rel="noopener">JSEP 2024</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Richen: Automated enrichment of Git documentation with usage examples and scenarios</span>
+          <span class="pub__authors">Chaochao Shen, Wenhua Yang, Haitao Jia, <u>Minxue Pan</u>, Yu Zhou.</span>
+          <span class="pub__meta"> Journal of Software: Evolution and Process, 2024;e2662. </span>
+          <a class="pub__link" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/smr.2662" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2024" target="_blank" rel="noopener">ICSE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Comprehensive Semantic Repair of Obsolete GUI Test Scripts for Mobile Applications</span>
+          <span class="pub__authors">Shaoheng Cao, <u>Minxue Pan</u>, Yu Pei, Wenhua Yang, Tian Zhang, Linzhang Wang, Xuandong Li.</span>
+          <span class="pub__meta"> 46th International Conference on Software Engineering, Article 90, 1–13. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3597503.3639108?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2024" target="_blank" rel="noopener">ICSE 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Deeply Reinforcing Android GUI Testing with Deep Reinforcement Learning</span>
+          <span class="pub__authors">Yuanhong Lan, Yifei Lu, Zhong Li, <u>Minxue Pan</u>, Wenhua Yang, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 46th International Conference on Software Engineering, Article 71, 1–13. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3597503.3623344?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2024">
+        <div class="pub__venue"><a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener">TOSEM 2024</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Deep is Better? An Empirical Comparison of Information Retrieval and Deep Learning Approaches to Code Summarization</span>
+          <span class="pub__authors">Tingwei Zhu, Zhong Li, <u>Minxue Pan</u>, Chaoxuan Shi, Tian Zhang, Yu Pei, Xuandong Li.</span>
+          <span class="pub__meta"> ACM Transactions on Software Engineering and Methodology, 33, 3, Article 67, 37 pages. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3631975?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-<table cellpadding=3 cellspacing=0 width="100%" class="sectionwhite" >
+      <!-- ===== 2023 ===== -->
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2023" target="_blank" rel="noopener">ASE 2023</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Vision-based Widget Mapping for Test Migration across Mobile Platforms: Are We There Yet?</span>
+          <span class="pub__authors">Ruihua Ji, Tingwei Zhu, Xiaoqing Zhu, Chunyang Chen, <u>Minxue Pan</u>, Tian Zhang.</span>
+          <span class="pub__meta"> 38th IEEE/ACM International Conference on Automated Software Engineering, Luxembourg, pp. 1416–1428. </span>
+          <a class="pub__link" href="https://ieeexplore.ieee.org/abstract/document/10298559" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2023" target="_blank" rel="noopener">ASE 2023</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Understanding and Enhancing Issue Prioritization in GitHub</span>
+          <span class="pub__authors">Yingying He, Wenhua Yang, <u>Minxue Pan</u>, Yasir Hussain, Yu Zhou.</span>
+          <span class="pub__meta"> 38th IEEE/ACM International Conference on Automated Software Engineering, Luxembourg, pp. 813–824. </span>
+          <a class="pub__link" href="https://ieeexplore.ieee.org/document/10298431" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2023" target="_blank" rel="noopener">ASE 2023</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">VALAR: Streamlining Alarm Ranking in Static Analysis with Value-Flow Assisted Active Learning</span>
+          <span class="pub__authors">Pengcheng Liu, Yifei Lu, Wenhua Yang, <u>Minxue Pan</u>.</span>
+          <span class="pub__meta"> 38th IEEE/ACM International Conference on Automated Software Engineering, Luxembourg, pp. 1940–1951. </span>
+          <a class="pub__link" href="https://ieeexplore.ieee.org/document/10298558" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/fse-2023" target="_blank" rel="noopener">FSE 2023</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Understanding the Topics and Challenges of GPU Programming by Classifying and Analyzing Stack Overflow Posts</span>
+          <span class="pub__authors">Wenhua Yang, Chong Zhang, <u>Minxue Pan</u>.</span>
+          <span class="pub__meta"> 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, pp. 1444–1456. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3611643.3616365?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank" rel="noopener">IST 2023</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Git command recommendations using crowd-sourced knowledge</span>
+          <span class="pub__authors">Haitao Jia, Wenhua Yang, Chaochao Shen, <u>Minxue Pan</u>, Yu Zhou.</span>
+          <span class="pub__meta"> Information and Software Technology, Volume 159, 2023, 107199. </span>
+          <a class="pub__link" href="https://www.sciencedirect.com/science/article/abs/pii/S0950584923000538" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2023">
+        <div class="pub__venue"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24" target="_blank" rel="noopener">TRel 2023</a></div>
+        <div class="pub__body">
+          <span class="pub__title">Ensure: Towards Reliable Control of Cyber-Physical Systems Under Uncertainty</span>
+          <span class="pub__authors">Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Yu Zhou, Zhiqiu Huang.</span>
+          <span class="pub__meta"> IEEE Transactions on Reliability, vol. 72, no. 1, pp. 289–301, March 2023. </span>
+          <a class="pub__link" href="https://ieeexplore.ieee.org/abstract/document/9765334" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-<TR> <td>
-<ul>
-  <li><p>Advanced Programming with C++. <i>Undergraduate compulsory course.</i></p></li> 
+      <!-- ===== 2022 ===== -->
+      <li class="pub" data-year="2022">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/ase-2022" target="_blank" rel="noopener">ASE 2022</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Robust Learning of Deep Predictive Models from Noisy and Imbalanced Software Engineering Datasets</span>
+          <span class="pub__authors">Zhong Li, <u>Minxue Pan</u>, Yu Pei, Tian Zhang, Linzhang Wang, Xuandong Li.</span>
+          <span class="pub__meta"> 37th IEEE/ACM International Conference on Automated Software Engineering, Article 86, 1–13, 2022. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/abs/10.1145/3551349.3556941?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2022">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2022" target="_blank" rel="noopener">ISSTA 2022</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Detecting Resource Utilization Bugs Induced by Variant Lifecycles in Android</span>
+          <span class="pub__authors">Yifei Lu, <u>Minxue Pan</u>, Yu Pei, Xuandong Li.</span>
+          <span class="pub__meta"> 31st ACM SIGSOFT International Symposium on Software Testing and Analysis, pp. 642–653, July 2022. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/abs/10.1145/3533767.3534413?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2022">
+        <div class="pub__venue"><a href="https://www.computer.org/csdl/journals/ts" target="_blank" rel="noopener">TSE 2022</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Program Repair with Repeated Learning</span>
+          <span class="pub__authors">Liushan Chen, Yu Pei, <u>Minxue Pan</u>, Tian Zhang, Qixin Wang, Carlo A. Furia.</span>
+          <span class="pub__meta"> IEEE Transactions on Software Engineering, vol. 49, no. 2, pp. 831–848. </span>
+          <a class="pub__link" href="https://ieeexplore.ieee.org/document/9749899" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2022">
+        <div class="pub__venue"><a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener">TOSEM 2022</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Preference-Wise Testing of Android Apps via Test Amplification</span>
+          <span class="pub__authors"><u>Minxue Pan</u>, Yifei Lu, Yu Pei, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> ACM Transactions on Software Engineering and Methodology, 32, 1, Article 4, 37 pages. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3511804" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="2022">
+        <div class="pub__venue"><a href="https://www.sosym.org/" target="_blank" rel="noopener">SoSyM 2022</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Improving timing analysis effectiveness for scenario-based specifications by combining SAT and LP techniques</span>
+          <span class="pub__authors">Longlong Lu, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> Software and Systems Modeling, 21, 1321–1338, 2022. </span>
+          <a class="pub__link" href="https://doi.org/10.1007/s10270-022-00980-8" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-  <li><p>Software System Design. <i>Undergraduate compulsory course.</i></p></li>
+      <!-- ===== 2021 & earlier ===== -->
+      <li class="pub" data-year="2021">
+        <div class="pub__venue"><a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener">TOSEM 2021</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Do Developers Really Know How to Use Git Commands? A Large-Scale Study Using Stack Overflow</span>
+          <span class="pub__authors">Wenhua Yang, Chong Zhang, <u>Minxue Pan</u>, Chang Xu, Yu Zhou, Zhiqiu Huang.</span>
+          <span class="pub__meta"> ACM Transactions on Software Engineering and Methodology, 31, 3, Article 44, 29 pages. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3494518?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2021" target="_blank" rel="noopener">ISSTA 2021</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">GUIDER: GUI Structure and Vision Co-Guided Test Script Repair for Android Apps</span>
+          <span class="pub__authors">Tongtong Xu, <u>Minxue Pan</u>, Yu Pei, Guiyin Li, Xia Zeng, Tian Zhang, Yuetang Deng, Xuandong Li.</span>
+          <span class="pub__meta"> 30th ACM SIGSOFT International Symposium on Software Testing and Analysis, pp. 191–203, July 2021, Virtual, Denmark. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3460319.3464830?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://icml.cc/Conferences/2021" target="_blank" rel="noopener">ICML 2021</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Testing DNN-based Autonomous Driving Systems under Critical Environmental Conditions</span>
+          <span class="pub__authors">Zhong Li, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 38th International Conference on Machine Learning, PMLR 139: 6471–6482, 2021. </span>
+          <a class="pub__link" href="http://proceedings.mlr.press/v139/li21r.html" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://onlinelibrary.wiley.com/journal/10991689" target="_blank" rel="noopener">STVR 2021</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Documentation-based Functional Constraint Generation for Library Methods</span>
+          <span class="pub__authors">Renhe Jiang, Zhengzhao Chen, Yu Pei, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> Software: Testing, Verification and Reliability, 2021;e1785. </span>
+          <a class="pub__link" href="https://doi.org/10.1002/stvr.1785" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.sciencedirect.com/journal/information-and-software-technology" target="_blank" rel="noopener">IST 2020</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Developer portraying: A quick approach to understanding developers on OSS platforms</span>
+          <span class="pub__authors">Wenhua Yang, <u>Minxue Pan</u>, Yu Zhou, Zhiqiu Huang.</span>
+          <span class="pub__meta"> Information and Software Technology, Volume 125, 2020, 106336. </span>
+          <a class="pub__link" href="https://www.sciencedirect.com/science/article/abs/pii/S0950584920301038" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.computer.org/csdl/journals/ts" target="_blank" rel="noopener">TSE 2020</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">GUI-Guided Test Script Repair for Mobile Apps</span>
+          <span class="pub__authors"><u>Minxue Pan</u>, Tongtong Xu, Yu Pei, Zhong Li, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE Transactions on Software Engineering, vol. 48, no. 3, pp. 910–929. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/TSE.2020.3007664" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://2020.esec-fse.org" target="_blank" rel="noopener">FSE 2020</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">C2S: Translating Natural Language Comments to Formal Program Specifications</span>
+          <span class="pub__authors">Juan Zhai, Yu Shi, <u>Minxue Pan</u>, Guian Zhou, Yongxiang Liu, Chunrong Fang, Shiqing Ma, Lin Tan, Xiangyu Zhang.</span>
+          <span class="pub__meta"> 28th ACM Joint Meeting on the Foundations of Software Engineering, pp. 25–37, Nov 2020, Virtual, USA. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3368089.3409716?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/issta-2020" target="_blank" rel="noopener">ISSTA 2020</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Reinforcement Learning Based Curiosity-driven Testing of Android Applications <span class="pub__award">Distinguished Paper</span></span>
+          <span class="pub__authors"><u>Minxue Pan</u>, An Huang, Guoxin Wang, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 29th ACM SIGSOFT International Symposium on Software Testing and Analysis, pp. 153–164, July 2020, Virtual, USA. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3395363.3397354?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.computer.org/csdl/journals/ts" target="_blank" rel="noopener">TSE 2020</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">RESTORE: Retrospective Fault Localization Enhancing Automated Program Repair</span>
+          <span class="pub__authors">Tongtong Xu, Liushan Chen, Yu Pei, Tian Zhang, <u>Minxue Pan</u>, Carlo A. Furia.</span>
+          <span class="pub__meta"> IEEE Transactions on Software Engineering, vol. 48, no. 1, pp. 309–326. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/TSE.2020.2987862" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icpc-2020" target="_blank" rel="noopener">ICPC 2020</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Deep-Diving into Documentation to Develop Improved Java-to-Swift API Mapping</span>
+          <span class="pub__authors">Zejun Zhang, <u>Minxue Pan</u>, Tian Zhang, Xinyu Zhou, Xuandong Li.</span>
+          <span class="pub__meta"> 28th IEEE/ACM International Conference on Program Comprehension, pp. 106–116, July 2020, Virtual, Republic of Korea. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3387904.3389282?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank" rel="noopener">JSS 2020</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Enhancing Example-Based Code Search with Functional Semantics</span>
+          <span class="pub__authors">Zhengzhao Chen, Renhe Jiang, Zejun Zhang, Yu Pei, <u>Minxue Pan</u>, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> Journal of Systems and Software, Volume 165, 2020, Article 110568. </span>
+          <a class="pub__link" href="https://doi.org/10.1016/j.jss.2020.110568" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2020" target="_blank" rel="noopener">ICSE 2020</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">CPC: Automatically Classifying and Propagating Natural Language Comments via Program Analysis</span>
+          <span class="pub__authors">Juan Zhai, Xiangzhe Xu, Yu Shi, Guanhong Tao, <u>Minxue Pan</u>, Shiqing Ma, Lei Xu, Weifeng Zhang, Lin Tan, Xiangyu Zhang.</span>
+          <span class="pub__meta"> 42nd International Conference on Software Engineering, pp. 1359–1371, July 2020, Virtual, Republic of Korea. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3377811.3380427?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank" rel="noopener">JSS 2020</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Effective Testing of Android Apps Using Extended IFML Models</span>
+          <span class="pub__authors"><u>Minxue Pan</u>, Yifei Lu, Yu Pei, Tian Zhang, Juan Zhai, Xuandong Li.</span>
+          <span class="pub__meta"> Journal of Systems and Software, Volume 159, 2020, Article 110433. </span>
+          <a class="pub__link" href="https://doi.org/10.1016/j.jss.2019.110433" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://esec-fse19.ut.ee/" target="_blank" rel="noopener">FSE 2019</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Preference-Wise Testing for Android Applications</span>
+          <span class="pub__authors">Yifei Lu, <u>Minxue Pan</u>, Juan Zhai, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, pp. 268–278, Aug 2019, Tallinn, Estonia. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3338906.3338980?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://conf.researchr.org/home/icse-2019" target="_blank" rel="noopener">ICSE 2019</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Easy modelling and verification of unpredictable and preemptive interrupt-driven systems</span>
+          <span class="pub__authors"><u>Minxue Pan</u>, Shouyu Chen, Yu Pei, Tian Zhang, Xuandong Li.</span>
+          <span class="pub__meta"> 41st International Conference on Software Engineering, pp. 212–222, May 2019, Montréal, QC, Canada. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/ICSE.2019.00037" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://link.springer.com/journal/10270" target="_blank" rel="noopener">SoSyM 2019</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Template-based model generation</span>
+          <span class="pub__authors">Xiao He, Tian Zhang, <u>Minxue Pan</u>, Zhiyi Ma, Chang-Jun Hu.</span>
+          <span class="pub__meta"> Software &amp; Systems Modeling (2019), Volume 18, Issue 3, pp. 2051–2092. </span>
+          <a class="pub__link" href="https://doi.org/10.1007/s10270-017-0634-5" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="http://ase2018.com/" target="_blank" rel="noopener">ASE 2018</a><span class="pub__tier pub__tier--a">CCF-A</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Dual-force: understanding WebView malware via cross-language forced execution</span>
+          <span class="pub__authors">Zhenhao Tang, Juan Zhai, <u>Minxue Pan</u>, Yousra Aafer, Shiqing Ma, Xiangyu Zhang, Jianhua Zhao.</span>
+          <span class="pub__meta"> 33rd ACM/IEEE International Conference on Automated Software Engineering, pp. 714–725, Sep 2018, Montpellier, France. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3238147.3238221?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="http://www.ieee-scam.org/2018/" target="_blank" rel="noopener">SCAM 2018</a><span class="pub__tier pub__tier--c">CCF-C</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Semantics-Based Code Search Using Input/Output Examples</span>
+          <span class="pub__authors">Renhe Jiang, Zhengzhao Chen, Zejun Zhang, Yu Pei, <u>Minxue Pan</u>, Tian Zhang.</span>
+          <span class="pub__meta"> 18th IEEE International Working Conference on Source Code Analysis and Manipulation, pp. 92–102, Sep 2018, Madrid, Spain. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/SCAM.2018.00018" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://toit.acm.org/" target="_blank" rel="noopener">TOIT 2018</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Improving Verification Accuracy of CPS by Modeling and Calibrating Interaction Uncertainty</span>
+          <span class="pub__authors">Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Xiaoxing Ma, Jian Lu.</span>
+          <span class="pub__meta"> ACM Transactions on Internet Technology (2018), Volume 18, Issue 2, Article 20. </span>
+          <a class="pub__link" href="https://dl.acm.org/doi/10.1145/3093894?cid=81438592397" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.journals.elsevier.com/journal-of-systems-and-software" target="_blank" rel="noopener">JSS 2018</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Efficient validation of self-adaptive applications by counterexample probability maximization</span>
+          <span class="pub__authors">Wenhua Yang, Chang Xu, <u>Minxue Pan</u>, Chun Cao, Xiaoxing Ma, Jian Lu.</span>
+          <span class="pub__meta"> Journal of Systems and Software (2018), Volume 138, pp. 82–99. </span>
+          <a class="pub__link" href="https://doi.org/10.1016/j.jss.2017.12.009" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
+      <li class="pub" data-year="older">
+        <div class="pub__venue"><a href="https://www.es.mdh.se/icst2018/" target="_blank" rel="noopener">ICST 2018</a><span class="pub__tier pub__tier--b">CCF-B</span></div>
+        <div class="pub__body">
+          <span class="pub__title">Uncovering Unknown System Behaviors in Uncertain Networks with Model and Search-Based Testing</span>
+          <span class="pub__authors">Ruihua Ji, Zhong Li, Shouyu Chen, <u>Minxue Pan</u>, Tian Zhang, Shaukat Ali, Tao Yue, Xuandong Li.</span>
+          <span class="pub__meta"> IEEE 11th International Conference on Software Testing, Verification and Validation, pp. 204–214, April 2018, Västerås, Sweden. </span>
+          <a class="pub__link" href="https://doi.org/10.1109/ICST.2018.00029" target="_blank" rel="noopener">[link]</a>
+        </div>
+      </li>
 
-  <li><p>Software Construction. <i>Undergraduate compulsory course.</i></p></li>
-  
-  <li><p>Advanced Software Design. <i>Graduate compulsory course.</i></p></li>
-  </ul>
-</td>
-<TR> <td> Visit <a href="http://219.219.120.72/" target="_blank">Moodle</a> for course materials.</td>
-</TR>
-</table>
-<br>
-</font>
-</SECTION>
+    </ol>
+  </section>
 
-<SECTION id ="codesandatasets"  class="sectionwhite">
-<h3> Tools and Codes</h3>
-<font size ="normal">
-<table cellpadding=3 cellspacing=0 width="100%" class="sectionwhite" >
+  <!-- ===================== TEACHING ===================== -->
+  <section class="section" id="teaching">
+    <h2 class="section__title">Teaching</h2>
+    <div class="teaching-grid">
+      <div class="course"><b>Advanced Programming with C++</b><span>Undergraduate · compulsory</span></div>
+      <div class="course"><b>Software System Design</b><span>Undergraduate · compulsory</span></div>
+      <div class="course"><b>Software Construction</b><span>Undergraduate · compulsory</span></div>
+      <div class="course"><b>Advanced Software Design</b><span>Graduate · compulsory</span></div>
+      <div class="course course--note">
+        Course materials are available on <a href="http://219.219.120.72/" target="_blank" rel="noopener">Moodle</a>.
+      </div>
+    </div>
+  </section>
 
-<TR> <td>
-<ul>
-  <li>
-    <p><strong><a href="https://github.com/anlalalu/Q-testing" target="_blank">Q-testing</a></strong> is an automated testing tool for Android applications. It uses a reinforcement-learning based curiosity-driven strategy to explore the state space of the application under test.</p>
-  </li>
-  <li>
-    <p><strong>ISDChecker</strong> model checks interrupt-driven systems. It adopts our modelling language <i>interrupt sequence diagrams</i> to model the systems, and checks for both temporal and timing related problems.</p>
-  </li>
-  <li>
-    <p><strong><a href="https://github.com/Prefest2018/Prefest" target="_blank">PREFEST</a></strong> performs preference-wise testing on Android apps. It can improve the test coverage by considering different preference option combinations and detect more preference related bugs.</p>
-  </li>
-  <li>
-    <p><strong>Sketchoid</strong> searches the desired Android app GUI code in app repositories, using simple hand-drawn GUI designs. <!--See several interesting demos <a href="" target="_blank">here</a>.-->
-	</p>
-  </li>
-  <li>
-    <p><strong><a href="https://github.com/youyuge34/PI-REC" target="_blank">PI-REC</a></strong>. If you want to have some nice pictures or icons for your apps or tools but are not so perfect in drawing, try our PI-REC. It can turn hand-drawn drafts into beautiful and realistic paintings.</p>
-  </li>
-  <li>
-    <p><strong>TASS</strong> is a timing analyzer of scenario-based specifications. It is no longer maintained; however, we are working actively to incorporate TASS and ISDChecker into a model checking framework.</p>
-  </li>
-</ul>	
-</td>
-</TR>
-</table>
-</font>
+  <!-- ===================== SERVICE ===================== -->
+  <section class="section" id="service">
+    <h2 class="section__title">Recent Professional Service</h2>
+    <div class="card">
+      <ul class="list-clean">
+        <li><strong>2027</strong><br>
+          Program Committee, ESEC/FSE — Research Papers Track<br>
+          Program Committee, ICSE — Research Track
+        </li>
+        <li><strong>2026</strong><br>
+          Program Committee, ISSTA — Research Papers Track<br>
+          Program Committee, ESEC/FSE — Research Papers Track<br>
+          Program Committee, ICSE — Research Track<br>
+          Program Committee, ICST — Short Papers, Vision and Emerging Results Track<br>
+          Program Committee, ICST — Testing Tools and Data Showcase Track<br>
+          Program Committee, SVM 2026
+        </li>
+      </ul>
+    </div>
+  </section>
 
+</div>
+
+<footer class="foot">
+  © <span id="year"></span> Minxue Pan · Software Institute, Nanjing University
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- Mobile navigation toggle ---- */
+  const navToggle = document.querySelector('.nav__toggle');
+  const navLinks = document.getElementById('nav-links');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open', open);
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('is-open');
+    navToggle.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  /* ---- Publication year filter ---- */
+  const filters = document.querySelectorAll('.pub-filter');
+  const pubs = Array.from(document.querySelectorAll('.pub'));
+  let activeFilter = 'all';
+
+  function applyView() {
+    pubs.forEach(p => {
+      const match = activeFilter === 'all' || p.dataset.year === activeFilter;
+      p.classList.toggle('is-hidden', !match);
+    });
+  }
+
+  filters.forEach(btn => btn.addEventListener('click', () => {
+    filters.forEach(b => b.classList.remove('is-active'));
+    btn.classList.add('is-active');
+    activeFilter = btn.dataset.filter;
+    applyView();
+  }));
+
+  applyView();
+</script>
 
 </body>
 </html>
